@@ -13,6 +13,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+        <!-- font awesome  -->
+        <script src="https://kit.fontawesome.com/0a7da69a94.js" crossorigin="anonymous"></script>
+        <!-- taiwind common color -->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                    blackk: '#1C1C1C',
+                    grayy: '#777'
+                  }
+                }
+              }
+            }
+          </script>
         <style>
             .font-manrope{
                 font-family: 'Manrope', sans-serif;
@@ -26,23 +42,26 @@
             <div class="hero-content lg:mt-16 flex-col md:flex-row   justify-evenly gap-10 container mx-auto">
 
                 <div>
-                    <h1 class=" text-5xl text-[#1C1C1C] lg:text-7xl font-extrabold">
+                    <h1 class=" text-5xl  text-blackk lg:text-7xl font-extrabold">
                         It's good <br>
                         tea time at The <br> 
                         Tea House
                     </h1>
-                    <p class="py-6 text-sm lg:text-lg font-medium text-[#777]">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+                    <p class="py-6 text-sm text-grayy lg:text-lg font-medium ">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
                     <button class="btn text-white  bg-gradient-to-r from-orange-400 to-red-500">Explore More <img class="w-3" src="./images/arrow.png" alt=""></button>
                 </div>
                 <div>
                     <img src="./images/banner.png" class=" max-w-sm md:w-auto " />
-                       <div class=" w-32 shadow-2xl rounded-lg bg-base-200">
-                          <h3 class="text-3xl font-extrabold">5.00</h3>
-                          <p class="text-sm font-semibold">Trust Pilot Ratings</p>
+                       <div class="  relative -mt-20 flex  justify-around items-center w-48 p-4 shadow-2xl rounded-lg bg-base-200">
+                        <div class="">
+                            <i class="fa-solid fa-star text-orange-300 text-xl"></i>
+                          </div>
+                         <div>
+                            <h3 class="text-3xl text-blackk font-extrabold">5.00</h3>
+                            <p class="text-sm text-grayy font-semibold">Trust Pilot Ratings</p>
+                         </div>
+                         
                        </div>
-                        
-                      
-                      
                 </div>
             </div>
     </header>
